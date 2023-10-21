@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --branco-principal: #000000;
+    --cinza-secundario: #c4c2c2;
+    --botao-azul: #000000;
+    --cor-de-fundo: #ffffff;
+
+    --fonte-principal: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* ------------------------------TELA 1------------------------------- */
+.principal {
+    /* background-image: url(./assets/background.jpg);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;*/
+    align-items: center;
+    text-align: center;
+
+}
+
+.logo {
+    padding-left: 10rem;
+}
+
+#imagem__principal {
+    width: 10%;
+}
+
+.container__tela1 {
+    height: 100vh;
+    display: flex;
+    grid-template-columns: 50% 50%;
+}
+
+.containter__titulo {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.container__botao:hover {
+    background-color: transparent;
+    color: var(--botao-azul);
+    transition: 1.4s;
+    border: 2px solid var(--botao-azul);
+}
+
+.botao_market {
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    margin-top: 0;
+}
+
+.botao_market:hover {
+    background-color: var(--botao-azul);
+    color: var(--cor-de-fundo);
+    transition: 1.7s;
+    border: 2px solid var(--cor-de-fundo);
+
+}
+
+.container__imagem {
+    margin: 1rem 0 2rem 0;
+}
+
+.container__aviso {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--botao-azul);
+}
+
+.container__caixa {
+    margin: 10rem 4rem;
+}
+
+/* -------------------------------TELA 2--------------------------------*/
+.container__secundario {
+    height: 100vh;
+
+}
+
+
+.titulo2 {
+    font-size: 2rem;
+
+}
+
+.container__secundario__flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-left: 30rem;
+
+}
+
+.container__colecoes__div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__colecoes {
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+    margin: 33rem 0 31rem 26rem;
+
+}
+
+.paragrafo {
+    color: var(--botao-azul);
+}
+
+.container__colecoes__botao {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    border-radius: 1rem;
+    background-color: var(--botao-azul);
+    color: var(--cor-de-fundo);
+    padding: 0.6rem;
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+.borda {
+    /* border: 1.5rem solid rgb(48, 44, 44); */
+    border-radius: 0.7rem;
+    width: 63vmin;
+    position: absolute;
+    transform: translate(-45%, -20%);
+    top: 145%;
+    left: 27%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 5rem;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    display: none;
+    /*overflow: hidden;*/
+    animation: slide 30s infinite;
+    padding-top: 4rem;
+
+}
+
+.wrapper:target {
+    display: flex;
+
+}
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    5% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(-105%);
+    }
+
+    25% {
+        transform: translateX(-105%);
+    }
+
+    40% {
+        transform: translateX(-205%);
+    }
+
+    45% {
+        transform: translateX(-205%);
+    }
+
+    55% {
+        transform: translateX(-305%);
+    }
+
+    65% {
+        transform: translateX(-305%);
+    }
+
+    75% {
+        transform: translateX(-405%);
+    }
+
+    80% {
+        transform: translateX(-405%);
+    }
+
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.imagem-ratate {
+    width: 100%;
+    height: auto;
+}
+
+.container__terceiro {
+    height: 100vh;
+}
+
+.espaco-em-branco {
+    height: -400px;
+    /* Ajuste a altura conforme necessário */
+    visibility: hidden;
+}
+
+
+
+/* -----------------------------------------------------------TELA 3-------------------------------------------------------- */
+#about {}
+
+.container__tittle {
+    margin: 0 20%;
+    padding-top: 15rem;
+}
+
+.container__about__main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 20%;
+    gap: 6rem;
+
+}
+
+.porifolio {
+    color: var(--branco-principal);
+    border: 4px solid var(--cinza-secundario);
+    text-align: left;
+
+}
+
+.container__about {
+
+    align-items: center;
+    text-align: left;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--cinza-secundario);
+}
+
+.rodape__marcacoes {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.3rem;
+}
+
+.marcacoes__links {
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--botao-azul);
+    font-weight: 500;
+}
+
+.marcacoes__links:hover {
+    color: blue;
+}
+
+.rodape__paragrafo {
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0 30rem
+}
+
+.rodape__contatos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.4rem;
+}
+
+.contatos__links {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    text-align: left;
+}
+
+.contatos__links__direct {
+    display: inline-flex;
+    text-decoration: none;
+
+}
